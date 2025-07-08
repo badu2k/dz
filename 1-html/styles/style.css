@@ -1,0 +1,66 @@
+
+body {
+	background: linear-gradient(180deg, #374151 0%, #111827 100%);
+}
+.navLink {
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	color: #fff;
+	text-decoration: none;
+}
+
+.topic {
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	color: #7C828C;
+}
+
+h1 {
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 38px%;
+	text-align: center;
+	color: #fff;
+}
+
+address p {
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 28px;
+	color: #fff;
+	font-style: normal;
+}
+
+.authorTitle {
+	font-size: 16px;
+	color: #797F89;
+}
+
+.mainText {
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 32px;
+	color: #fff;
+}
+
+.conclusionText {
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 30px;
+	color: #fff;
+}
+
+footer span {
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 175%;
+	text-align: center;
+	color: #676C75;
+}

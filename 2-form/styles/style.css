@@ -1,0 +1,25 @@
+main {
+	background-color: #1E1F29;
+}
+
+h1 {
+	color: #FAFAFA
+}
+
+input, textarea, select {
+	background-color: #2E2D3D;
+	color: #FAFAFA;
+}
+
+label {
+	color: #AFB2BF;
+}
+
+button {
+	background-color: #6C38CC;
+	color: #FAFAFA; 
+}
+
+input[type="email"] {
+	background: red;
+}
