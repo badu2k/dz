@@ -1,10 +1,12 @@
 body {
 	background: linear-gradient(180deg, #374151 0%, #111827 100%);
 	margin: 0;
+	
 }
 
 main {
 	margin: 100px auto;
+	
 }
 
 
@@ -65,6 +67,7 @@ footer {
 
 .mainHeader {
 	padding:0 103px;
+	margin-bottom: 69px;
 }
 
 .navLink {
