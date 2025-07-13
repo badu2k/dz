@@ -1,0 +1,132 @@
+body {
+	background: linear-gradient(180deg, #374151 0%, #111827 100%);
+	margin: 0;
+}
+
+main {
+	margin: 100px auto 100px auto;
+}
+
+
+article {
+	width: 896px;
+	margin: 0 auto;
+}
+
+h1 {
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 38px;
+	text-align: center;
+	color: #fff;
+	margin: 0 0 30px 0;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0;
+}
+
+nav+input {
+	border-radius: 100px;
+	width: 224px;
+	height: 40px;
+	padding: 18px 13px;
+	box-sizing: border-box;
+}
+
+article header {
+	margin: 0 0 40px 0;
+}
+
+address p {
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 28px;
+	color: #fff;
+	font-style: normal;
+}
+
+address {
+	margin: 0 0 30px 0;
+}
+
+footer span {
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 175%;
+	text-align: center;
+	color: #676C75;
+	
+}
+
+footer {
+	padding: 50px;
+}
+
+.mainHeader {
+	padding:0 103px;
+	margin:0 0 69px 0;
+}
+
+.navLink {
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	color: #fff;
+	text-decoration: none;
+}
+
+.topic {
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	color: #7C828C;
+	margin: 0 0 14px 0;
+}
+
+.authorTitle {
+	font-size: 16px;
+	color: #797F89;
+}
+
+.mainText {
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 32px;
+	color: #fff;
+	margin: 0 0 40px 0;
+}
+
+.conclusionText {
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 30px;
+	color: #fff;
+	margin: 0 0 40px 0;
+}
+
+.articleText {
+	margin:0 0 10px 0;
+}
+
+.articleText p:last-child {
+	margin-bottom: 0;
+}
+
+.avatarPic {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+}
+
+.contentPic {
+	width: 886px;
+	height: 594px;
+	margin: 0 0 69px 0;
+}

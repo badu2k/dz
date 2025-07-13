@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Форма регистрации</title>
+	<link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
 	<main>
@@ -16,7 +17,7 @@
 			<form action="#">
 				<div>
 					<label for="login">Логин</label>
-					<input type="text" id="login" name="login" placeholder="Введите логин">
+					<input type="text" id="login" name="login" placeholder="Введите логин" value="Моя компания">
 				</div>
 				<div>
 					<label for="firstname">Имя</label>
@@ -30,7 +31,7 @@
 				</div>
 				<button type="submit">Зарегистрироваться</button>
 				<div>
-					<input type="checkbox" name="agreement" id="agreement"> <label for="agreement">Я прочитал и принимаю <a href="#">Условия использования</a></label>
+					<input class="agreement" type="checkbox" name="agreement" id="agreement"> <label for="agreement">Я прочитал и принимаю <a href="#">Условия использования</a></label>
 				</div>
 			</form>
 		</section>

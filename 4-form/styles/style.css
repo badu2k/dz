@@ -1,0 +1,62 @@
+h1 {
+	color: #333333;
+	font-size: 36px;
+	font-weight: 700;
+	font-family: 'Open Sans';
+	line-height: 100%;
+}
+
+span {
+	color: #666666;
+	font-size: 18px;
+	font-weight: 400;
+	font-family: 'Open Sans';
+	line-height: 100%;
+}
+
+a {
+	color: #089FE0;
+	font-size: 18px;
+	font-weight: 400;
+	font-family: 'Open Sans';
+	line-height: 100%;
+}
+
+input {
+	background-color: #F5F5F5;
+	color: #999999;
+	font-size: 16px;
+	font-weight: 400;
+	font-family: 'Open Sans';
+	line-height: 100%;
+	font-style: italic;
+}
+
+section {
+	background-color: #FFFEFE;
+}
+
+button {
+	color: #FFFFFF;
+	font-size: 18px;
+	font-weight: 400;
+	font-family: 'Open Sans';
+	line-height: 100%;
+	background-color: #089FE0;
+}
+
+.agreement {
+	color: #666666;
+	font-size: 14px;
+	font-weight: 400;
+	font-family: 'Open Sans';
+	line-height: 100%;
+}
+
+.agreement a {
+	color: #089FE0;
+}
+
+body {
+	background: linear-gradient(-116.825deg, #FDC5C5 25%, rgba(242, 152, 222, 0%) 100%), linear-gradient(-116.565deg, #FFA5A5 33%, rgba(255, 255, 255, 0%) 82%), linear-gradient(#F39494, #F39494);
+}
