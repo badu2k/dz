@@ -3,9 +3,10 @@ body {
 	margin: 0;
 }
 
-.mainHeader {
-	padding:0 103px;
+main {
+	margin: 0 auto 100px;
 }
+
 
 article {
 	width: 896px;
@@ -35,8 +36,8 @@ nav+input {
 	box-sizing: border-box;
 }
 
-address {
-	margin: 0 0 31px 0;
+article+header {
+	margin: 0 0 281px 0;
 }
 
 address p {
@@ -64,6 +65,7 @@ footer {
 
 .mainHeader {
 	margin: 0 0 69px 0;
+	padding:0 103px;
 }
 
 .navLink {
@@ -105,7 +107,7 @@ footer {
 	margin: 0 0 40px 0;
 }
 
-.articleText:last-child {
+.articleText p:last-child {
 	margin-bottom: 0;
 }
 
