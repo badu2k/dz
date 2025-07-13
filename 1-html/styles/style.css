@@ -1,12 +1,10 @@
 body {
 	background: linear-gradient(180deg, #374151 0%, #111827 100%);
 	margin: 0;
-	
 }
 
 main {
-	margin: 100px auto;
-	
+	margin: 100px auto 100px auto;
 }
 
 
@@ -67,7 +65,7 @@ footer {
 
 .mainHeader {
 	padding:0 103px;
-	margin-bottom: 69px;
+	margin:0 0 69px 0;
 }
 
 .navLink {
@@ -107,6 +105,10 @@ footer {
 	line-height: 30px;
 	color: #fff;
 	margin: 0 0 40px 0;
+}
+
+.articleText {
+	margin:0 0 10 px 0;
 }
 
 .articleText p:last-child {
