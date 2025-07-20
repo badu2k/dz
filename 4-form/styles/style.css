@@ -90,7 +90,19 @@ button {
 .field {
 	min-width: 394px;
 	display: flex;
-	
+	justify-content: space-between;
+	gap:1px;
+	box-sizing: border-box;
+}
+
+.field div{
+	display: flex;
+	flex-grow: 1;
+}
+
+
+.field div input{
+	flex-grow: 1;
 }
 
 .regForm {
@@ -116,11 +128,11 @@ button {
 }
 
 .buttonIcon {
-width: 22px;
-position: absolute;
-right: 22px;
-top: 50%;
-transform: translateY(-50%);
+	width: 22px;
+	position: absolute;
+	right: 22px;
+	top: 50%;
+	transform: translateY(-50%);
 }
 
 .terms {
