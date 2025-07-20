@@ -10,22 +10,25 @@
 	<main>
 		<h1>Свяжитесь со мной</h1>
 		<form action="/test">
-			<div>
+			<div class="field">
+				<img src="./icons/message.svg" alt="Иконка сообщения">
 				<label for="email">Email*</label>
 				<input type="email" name="email" id="email" placeholder="Введите Email" required>
 			</div>
-			<div>
-				<label for="telegram">telegram</label>
+			<div class="field">
+				<img src="./icons/telegram.svg" alt="Иконка телеграма">
+				<label for="telegram">Telegram</label>
 				<input type="text" name="telegram" id="telegram" placeholder="Введите telegram">
 			</div>
-			<div>
+			<div class="field">
+				<img src="./icons/topic.svg" alt="Иконка темы">
 				<label for="topic">Тема*</label>
 				<select name="topic" id="topic" required>
 					<option value="courses">Приобретение курсов</option>
 					<option value="feedback">Обратная связь</option>
 				</select>
 			</div>
-			<div>
+			<div class="field">
 				<label for="comment">Комментарий</label>
 				<textarea name="comment" id="comment"></textarea>
 			</div>
