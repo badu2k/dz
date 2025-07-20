@@ -91,7 +91,7 @@ button {
 	min-width: 394px;
 	display: flex;
 	justify-content: space-between;
-	gap:1px;
+	gap:2px;
 	box-sizing: border-box;
 }
 
@@ -111,37 +111,41 @@ button {
 	gap: 10px;
 }
 
-/* .agreement {
-	color: #F5F5F5;
-	font-size: 14px;
-	font-weight: 400;
-	font-family: 'Open Sans';
-	line-height: 100%;
-	flex-grow:0;
-	border-radius: 5px;
-	border: 1px solid #EEEEEE;
-} */
-
 .checkbox {
 	display: none; /* скрываем стандартный чекбокс */
 }
 
-.custom {
-  display: inline-block;
-  width: 15px;
-  height: 15px;
-  border: 1px solid #EEEEEE;
-  border-radius: 5px;
-  vertical-align: middle;
-  position: relative;
-  background: #f5f5f5;
-}
-
-.agreementLabel {
+.checkbox + label {
+	position: relative;
+	padding-left: 20px;
+	height: 1.5em;
+	/* display: flex; */
+	align-items: center;
 	font-weight: 400;
 	font-size: 14px;
 	color: #666;
+	cursor: pointer;
+	user-select: none;
 }
+
+.checkbox + label:before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 15px;
+	height: 15px;
+	border-radius: 5px;
+	border: 1px solid #EEEEEE;
+	background: #f5f5f5;
+}
+
+.checkbox:checked + label:before {
+	border-color: #111;
+	background: url(../Icons/checkbox.svg);
+	background-size: contain;
+}
+
 .agreement a {
 	font-weight: 400;
 	font-size: 14px;
