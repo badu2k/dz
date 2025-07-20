@@ -111,17 +111,41 @@ button {
 	gap: 10px;
 }
 
-.agreement {
-	color: #666666;
+/* .agreement {
+	color: #F5F5F5;
 	font-size: 14px;
 	font-weight: 400;
 	font-family: 'Open Sans';
 	line-height: 100%;
 	flex-grow:0;
+	border-radius: 5px;
+	border: 1px solid #EEEEEE;
+} */
+
+.checkbox {
+	display: none; /* скрываем стандартный чекбокс */
 }
 
+.custom {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #EEEEEE;
+  border-radius: 5px;
+  vertical-align: middle;
+  position: relative;
+  background: #f5f5f5;
+}
+
+.agreementLabel {
+	font-weight: 400;
+	font-size: 14px;
+	color: #666;
+}
 .agreement a {
-	color: #089FE0;
+	font-weight: 400;
+	font-size: 14px;
+	color: #089fe0;
 }
 
 .login {
