@@ -5,19 +5,28 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Блог</title>
 	<link rel="stylesheet" href="./styles/style.css">
+	<link rel="stylesheet" href="./styles.css/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
+
 	<header class="mainHeader">
-		<nav>
-			<ul>
-				<li><a class="navLink" href="" title="Профиль">В</a></li>
-				<li><a class="navLink" href="">Мой блог</a></li>
-				<li><a class="navLink" href="">HTML и CSS</a></li>
-				<li><a class="navLink" href="">Frontend</a></li>
-				<li><a class="navLink" href="">Backend</a></li>
-			</ul>
-		</nav>
-		<input type="text" placeholder="Поиск...">
+		<div>
+			<nav>
+				<a class="navLink" href="">Мой блог</a>
+				<ul>
+					<li><a class="navLink" href="">HTML и CSS</a></li>
+					<li><a class="navLink" href="">Frontend</a></li>
+					<li><a class="navLink" href="">Backend</a></li>
+				</ul>
+			</nav>
+			<div class="input-wrapper">
+				<input type="text" placeholder="Поиск">
+				<span class="icon"></span>
+			</div>
+		</div>
 	</header>
 	<main>
 		
@@ -30,8 +39,10 @@
 				<h1>Теория цвета - Как цвет влияет на поведение потребителей</h1>
 				<address>
 					<img class="avatarPic" src="./images/ava.png" alt="Аватарка пользователя">
-					<p class="authorName">Наталья Васильева</p>
-					<p class="authorTitle">Разработчик</p>
+					<div>
+						<p class="authorName">Наталья Васильева</p>
+						<p class="authorTitle">Разработчик</p>
+					</div>
 				</address>
 			</header>
 			<section class="articleText">
