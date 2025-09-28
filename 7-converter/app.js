@@ -21,6 +21,8 @@ function currencyTransfer(cash, currency1, currency2) {
 		case currency1 === 'ruble' && currency2 === 'euro':
 			return cash*rubletoEuro;
 	} 
+	default:
+		return null;
 }
 
 console.log(currencyTransfer(100, 'ruble', 'euro'));
