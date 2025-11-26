@@ -6,4 +6,4 @@ function filterArray(numbers, shouldRemove) {
     }
   }
   return result;
-}d
+}
