@@ -1,3 +1,4 @@
+const arr = ['10-02-2022', 'тест', '11/12/2023', '00/13/2022', '41/12/2023'];
 function filterAndFormatDates(strings) {
   return strings
     .map(str => str.replace(/\//g, '-'))
