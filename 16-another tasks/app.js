@@ -37,7 +37,7 @@ const newTask = {
       name: "тест", 
       description: "описание",
       order: 0
-      }];
+      }]
 }
 
 toDoList.addTask.call(newTask, 'Новая задача', 2, 5);
