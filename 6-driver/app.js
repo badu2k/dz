@@ -1,0 +1,1 @@
+const canDrive = (hasLicence, age, isDrunk) => age > 18 && hasLicence && !isDrunk ? 'может' : 'не может';

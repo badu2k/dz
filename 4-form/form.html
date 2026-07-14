@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Форма регистрации</title>
+	<link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+	<main>
+		<section class="formContainer">
+			<h1>Регистрация</h1>
+			<div class="login">
+				<span>Уже есть аккаунт?</span>
+				<a href="#">Войти</a>
+			</div>
+			<form class="regForm" action="#">
+				<div class="field">
+					<label for="login">Логин</label>
+					<input type="text" id="login" name="login" placeholder="Введите логин" value="Моя компания" required>
+				</div>
+				<div class="field">
+					<div>
+						<label for="firstname">Имя</label>
+						<input type="text" id="firstname" name="firstname" placeholder="Имя" required>
+					</div>
+					<div>
+						<label for="surname">Фамилия</label>
+						<input type="text" id="surname" name="surname" placeholder="Фамилия" required>
+					</div>
+				</div>
+				<div class="field">
+					<label for="email">E-mail</label>
+					<input type="email" id="email" name="email" placeholder="E-mail" required>
+				</div>
+				<div class="field">
+					<button type="submit">
+						Зарегистрироваться 
+						<img src="./Icons/Arrow.svg" alt="Иконка кнопки" class="buttonIcon">
+					</button>
+				</div>
+				<div class="field">
+					<div class="agreementField">
+						<input class="checkbox" type="checkbox" name="agreement" id="agreement" required>
+						<label class="agreementLabel" for="agreement">Я прочитал и принимаю </label>
+						<a class="terms" href="#">Условия использования</a>
+					</div>
+				</div>
+			</form>
+		</section>
+	</main>
+
+</body>
+</html>
