@@ -1,0 +1,37 @@
+:root {
+	--color-bg: #FFF;
+	--secong-color: #357EFE;
+	--color-gray-text: rgba(78, 93, 124, 0.5);
+	--color-table-text:#4e5d7c;
+	--color-bg-green: #1abc9c;
+	--color-bg-yellow: #ffc736;
+	--border-8: 8px;
+	--border-47: 47px;
+	--font-family: "Inter", sans-serif;
+}
+
+* {
+	box-sizing: border-box;
+	margin:0;
+}
+
+
+html {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
+}
+
+body {
+	background: var(--color-bg);
+	margin: 0;
+	font-family: "Inter", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+
+
+}
+
+a {
+	text-decoration: none;
+}
