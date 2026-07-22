@@ -1,18 +1,14 @@
 
-const user = {
-  name: 'Vasia',
-  birthday: '2002-01-01'
-}
-
-function validateAge(user) {
-  const birthday = new Date(user.birthday);
+function validateAge(userDay) {
+  const birthday = new Date(userDay);
   const now = new Date();
-  const fourteenYearsAgo = new Date(
-    now.getFullYear() - 14,
-    now.getMonth(),
-    now.getDate()
-  );
+  let age = now.getFullYear() - birthday.getFullYear();
 
-  return birthday <= fourteenYearsAgo;
+  const monthDiff = now.getMonth() - birthday.getMonth();
+  const dayDiff = now.getDate() - birthday.getDate();
+
+  if (monthDiff < 0 || (monthDiff === 0 && dayDiff < 0)) {
+    age--;
+  }
 }
-console.log(validateAge(user));
+console.log(validateAge('2022-01-01'));
