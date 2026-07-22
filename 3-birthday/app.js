@@ -10,5 +10,6 @@ function validateAge(userDay) {
   if (monthDiff < 0 || (monthDiff === 0 && dayDiff < 0)) {
     age--;
   }
+  return age >= 14;
 }
 console.log(validateAge('2022-01-01'));
