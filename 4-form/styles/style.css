@@ -1,0 +1,170 @@
+body {
+	background: linear-gradient(-116.825deg, #FDC5C5 25%, rgba(242, 152, 222, 0%) 100%), linear-gradient(-116.565deg, #FFA5A5 33%, rgba(255, 255, 255, 0%) 82%), linear-gradient(#F39494, #F39494);
+}
+
+h1 {
+	color: #333333;
+	font-size: 36px;
+	font-weight: 700;
+	font-family: 'Open Sans';
+	line-height: 100%;
+	margin: 0;
+}
+
+span {
+	color: #666666;
+	font-size: 18px;
+	font-weight: 400;
+	font-family: 'Open Sans';
+	line-height: 100%;
+}
+
+a {
+	color: #089FE0;
+	font-size: 18px;
+	font-weight: 400;
+	font-family: 'Open Sans';
+	line-height: 100%;
+}
+
+label:not(.agreementLabel) {
+	display: none;
+}
+
+input {
+	background-color: #F5F5F5;
+	color: #999999;
+	font-size: 16px;
+	font-weight: 400;
+	font-family: 'Open Sans';
+	line-height: 100%;
+	font-style: italic;
+	border-radius: 5px;
+	padding: 9px 11px;
+	border: 1px solid #FFFFFF;
+	flex-grow: 1;
+}
+
+input::placeholder {
+	font-style: italic;
+	font-weight: 400;
+	font-size: 16px;
+	color: #999;
+}
+
+input:active {
+	background-color: #F5F5F5;
+	border: 1px solid #FFFFFF;
+}
+
+button {
+	color: #FFFFFF;
+	font-size: 18px;
+	font-weight: 400;
+	font-family: 'Open Sans';
+	line-height: 100%;
+	background-color: #089FE0;
+	border-radius: 5px;
+	padding: 9px;
+	border: 1px solid #FFFFFF;
+	flex-grow: 1;
+	position: relative;
+}
+
+.formContainer {
+	display: flex;
+	margin: auto;
+	flex-direction: column;
+	align-items: center;
+	width: 573px;
+	height: 582px;
+	justify-content: center;
+	border-radius: 10px;
+	background-color: #FFFEFE;
+	padding: 72px 95px;
+	box-sizing: border-box;
+	box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+	
+}
+
+.field {
+	min-width: 394px;
+	display: flex;
+	justify-content: space-between;
+	gap:2px;
+	box-sizing: border-box;
+}
+
+.field div{
+	display: flex;
+	flex-grow: 1;
+	align-items: baseline;
+}
+
+
+.field div input{
+	flex-grow: 1;
+}
+
+.regForm {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.checkbox {
+	display: none; /* скрываем стандартный чекбокс */
+}
+
+.checkbox + label {
+	position: relative;
+	padding-left: 20px;
+	height: 1.5em;
+	/* display: flex; */
+	align-items: center;
+	font-weight: 400;
+	font-size: 14px;
+	color: #666;
+	cursor: pointer;
+	user-select: none;
+}
+
+.checkbox + label:before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 15px;
+	height: 15px;
+	border-radius: 5px;
+	border: 1px solid #EEEEEE;
+	background: #f5f5f5;
+}
+
+.checkbox:checked + label:before {
+	border-color: #111;
+	background: url(../Icons/checkbox.svg);
+	background-size: contain;
+}
+
+.agreement a {
+	font-weight: 400;
+	font-size: 14px;
+	color: #089fe0;
+}
+
+.login {
+	margin-bottom: 47px;
+}
+
+.buttonIcon {
+	width: 22px;
+	position: absolute;
+	right: 22px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.terms {
+	text-decoration: none;
+}
