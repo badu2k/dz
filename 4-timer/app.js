@@ -1,13 +1,27 @@
 function newYearTimer() {
+  const timer = document.getElementById('timer');
+
   const interval = setInterval(() => {
     const now = new Date();
     const newYear = new Date(now.getFullYear() + 1, 0, 1);
 
-    const diff = newYear - now;
+    let months =
+      (newYear.getFullYear() - now.getFullYear()) * 12 +
+      (newYear.getMonth() - now.getMonth());
 
-    if (diff <= 0) {
+    const dateWithMonths = new Date(now);
+    dateWithMonths.setMonth(dateWithMonths.getMonth() + months);
+
+    if (dateWithMonths > newYear) {
+      months--;
+      dateWithMonths.setMonth(dateWithMonths.getMonth() - 1);
+    }
+
+    const diff = newYear - dateWithMonths;
+
+    if (diff <= 0 && months <= 0) {
       clearInterval(interval);
-      console.log('С Новым годом!');
+      timer.textContent = 'С Новым годом!';
       return;
     }
 
@@ -16,7 +30,7 @@ function newYearTimer() {
     const minutes = Math.floor((diff / (1000 * 60)) % 60);
     const seconds = Math.floor((diff / 1000) % 60);
 
-    console.log(`${days}д ${hours}ч ${minutes}м ${seconds}с`);
+    timer.textContent = `${months} месяцев, ${days} дней, ${hours} часов, ${minutes} минут, ${seconds} секунд`;
   }, 1000);
 }
 
