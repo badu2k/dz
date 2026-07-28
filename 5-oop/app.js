@@ -1,37 +1,40 @@
-function newYearTimer() {
-  const timer = document.getElementById('timer');
-
-  const interval = setInterval(() => {
-    const now = new Date();
-    const newYear = new Date(now.getFullYear() + 1, 0, 1);
-
-    let months =
-      (newYear.getFullYear() - now.getFullYear()) * 12 +
-      (newYear.getMonth() - now.getMonth());
-
-    const dateWithMonths = new Date(now);
-    dateWithMonths.setMonth(dateWithMonths.getMonth() + months);
-
-    if (dateWithMonths > newYear) {
-      months--;
-      dateWithMonths.setMonth(dateWithMonths.getMonth() - 1);
-    }
-
-    const diff = newYear - dateWithMonths;
-
-    if (diff <= 0 && months <= 0) {
-      clearInterval(interval);
-      timer.textContent = 'С Новым годом!';
-      return;
-    }
-
-    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-    const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
-    const minutes = Math.floor((diff / (1000 * 60)) % 60);
-    const seconds = Math.floor((diff / 1000) % 60);
-
-    timer.textContent = `${months} месяцев, ${days} дней, ${hours} часов, ${minutes} минут, ${seconds} секунд`;
-  }, 1000);
+function Character(race, name, lang) {
+  this.race = race;
+  this.name = name;
+  this.lang = lang;
 }
 
-newYearTimer();
+Character.prototype.speak = function() {
+  console.log(`${this.name} говорит на языке: ${this.lang}`);
+}
+function Orc (race, name, language, weapon) {
+  Character.call(this, race, name, language);
+  this.weapon = weapon;
+}
+
+Orc.prototype = Object.create(Character.prototype);
+Orc.prototype.constructor = Orc;
+Orc.prototype.hit = function() {
+  console.log(`${this.name} наносит удар оружием: ${this.weapon}`); 
+}
+
+function Elf(race, name, language, spellType) {
+  Character.call(this, race, name, language);
+  this.spellType = spellType;
+}
+
+Elf.prototype = Object.create(Character.prototype);
+Elf.prototype.constructor = Elf;
+
+Elf.prototype.createSpell = function () {
+  console.log(`${this.name} создает заклинание типа: ${this.spellType}`);
+};
+
+const orc = new Orc('Орк', 'Шрек', 'Орочий', 'Дубина');
+const elf = new Elf('Эльф', 'Ева', 'Эльфийский', 'Заморозка');
+
+orc.speak();
+orc.hit();
+
+elf.speak();
+elf.createSpell();
