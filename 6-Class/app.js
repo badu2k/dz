@@ -3,8 +3,6 @@ class Car {
   #model;
   #mileage;
   constructor(make, model, mileage ) {
-    this.#login = login;
-    this.#password = password;
     this.#make =  make;
     this.#model = model;
     this.#mileage = mileage;
