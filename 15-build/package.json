@@ -1,0 +1,17 @@
+{
+  "name": "bulder",
+  "version": "1.0.0",
+  "description": "just training to build",
+  "keywords": [
+    "build"
+  ],
+  "license": "ISC",
+  "author": "Vadim",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "live-server",
+    "build": "rollup -c",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
