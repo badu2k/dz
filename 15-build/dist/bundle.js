@@ -1,26 +1,21 @@
-(function () {
-	'use strict';
-
-	class User {
-		constructor(task) {
-			this.task = task;
-		}
-		do() {
-			this.task.run();
-		}
+class User {
+	constructor(task) {
+		this.task = task;
 	}
-
-	class Task {
-		constructor(str) {
-			this.str = str;
-		}
-		run() {
-			console.log(this.str);
-		}
+	do() {
+		this.task.run();
 	}
+}
 
-	const doMath = new Task('Сделать математику');
-	const user = new User(doMath);
-	user.do();
+class Task {
+	constructor(str) {
+		this.str = str;
+	}
+	run() {
+		console.log(this.str);
+	}
+}
 
-})();
+const doMath = new Task('Сделать математику');
+const user = new User(doMath);
+user.do();
